@@ -1,3 +1,16 @@
-<div class="top">Hi</div>
+<div class="top">Hi this should be yellow with red background</div>
 
-<div class="bot">There</div>
+<div class="bot">This should be white with magenta background</div>
+
+To get it to compile:
+<ol>
+  <li>
+    remove the tilde from line 5 of @momentum-ui/core/scss/momentum-ui.scss
+  </li>
+  <li>
+    remove the tilde from line 3483 of
+    @momentum-ui/core/scss/settings/settings.scss. (If you run `npm start` now
+    it will throw a different error)
+  </li>
+  <li>Use the @use version instead in styles.scss. Ie. uncomment line 6, 10, 15 and comment out the lines above each of them.</li>
+</ol>

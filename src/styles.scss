@@ -2,14 +2,16 @@
 $brand-font-folder: "@momentum-ui/core/fonts";
 $icon-font-path: "@momentum-ui/icons/fonts";
 $images-path: "@momentum-ui/core/images";
-@import "@momentum-ui/core/scss/momentum-ui.scss";
-// @use '@momentum-ui/core/scss/momentum-ui' as mui;
+@import "@momentum-ui/core/scss/momentum-ui";
+// @use "@momentum-ui/core/scss/momentum-ui" as mui;
 
 .top {
   @include badge-style($bg: red, $color: yellow);
+  // @include mui.badge-style($bg: red, $color: yellow);
 }
 
 .bot {
   color: $input__background;
+  // color: mui.$input__background;
   background-color: magenta;
 }
