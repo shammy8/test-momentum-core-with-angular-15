@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-$brand-font-folder: "@momentum-ui/core/fonts";
-$icon-font-path: "@momentum-ui/icons/fonts";
-$images-path: "@momentum-ui/core/images";
+$brand-font-folder: "../../fonts";
+$icon-font-path: "../../icons/fonts";
+$images-path: "../../../images";
+
+// TODO need to check why below doesn't work, they were working in Angular 14. Above works now.
+// If we use the @use version below instead of the @import the below scss variables works.
+// $brand-font-folder: "@momentum-ui/core/fonts";
+// $icon-font-path: "@momentum-ui/icons/fonts";
+// $images-path: "@momentum-ui/core/images";
+
 @import "@momentum-ui/core/scss/momentum-ui";
 // @use "@momentum-ui/core/scss/momentum-ui" as mui;
 
